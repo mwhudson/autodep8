@@ -24,3 +24,4 @@ Description: DEP-8 test control file generator
   - NodeJS packages
   - Kernel module packages using DKMS
   - R packages
+  - Go packages
