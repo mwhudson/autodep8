@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cat <<EOF
-Test-Command: ./debian/rules build
-Depends: @builddeps@
-Restrictions: rw-build-tree
+Test-Command: true
+Depends:
+Restrictions: build-needed
 EOF
