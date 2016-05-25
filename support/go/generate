@@ -1,7 +1,6 @@
 #!/bin/sh
 
 cat <<EOF
-Test-Command: true
-Depends:
-Restrictions: build-needed
+Test-Command: GOPATH=/usr/share/gocode go test -v -short $(perl -MDebian::Debhelper::Dh_Buildsystems -e 'buildsystems_init(); my $bs = load_buildsystem("golang"); print(join " ", $bs->get_targets(), "\n");')
+Depends: @
 EOF
